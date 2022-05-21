@@ -1,4 +1,4 @@
-/*Ecritures non équilibrée*/
+/*Ecritures non équilibrées*/
 SELECT ec.id_ecriture, SUM(mvt.montant_signe) FROM cpt_ecriture ec
 INNER JOIN cpt_mouvement mvt on ec.id_ecriture=mvt.fk_id_ecriture
 GROUP BY ec.id_ecriture
