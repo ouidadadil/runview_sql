@@ -105,7 +105,8 @@ CREATE TABLE `cpt_plan_comptable` (
   `id_plan_comptable` int(11) NOT NULL AUTO_INCREMENT,
   `numero_plan_comptable` int(11) NOT NULL,
   `libelle` text,
-  PRIMARY KEY (`id_plan_comptable`)
+  PRIMARY KEY (`id_plan_comptable`),
+  KEY `cpt_plan_comptable_numero_plan_comptable_index` (`numero_plan_comptable`)
 ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -128,4 +129,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-05-21 14:47:16
+-- Dump completed on 2022-05-21 15:04:09
