@@ -5,3 +5,4 @@ Le projet comporte deux scripts :
 * requetes.sql contient deux requetes pour la récupération des :
     * Ecritures non équilibrées 
     * Ecritures dont la plan comptable commence par 404
+    * Ecritures dont tous les mouvements sont liés au même numéro de compte
