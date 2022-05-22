@@ -1,6 +1,6 @@
 -- MySQL dump 10.13  Distrib 5.7.38, for Linux (x86_64)
 --
--- Host: 127.0.0.1    Database: COMPTABLITE
+-- Host: 127.0.0.1    Database: COMPTABILITE
 -- ------------------------------------------------------
 -- Server version	5.7.38-0ubuntu0.18.04.1
 
@@ -26,7 +26,7 @@ CREATE TABLE `cpt_ecriture` (
   `id_ecriture` int(11) NOT NULL AUTO_INCREMENT,
   `libelle` text,
   PRIMARY KEY (`id_ecriture`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -35,7 +35,7 @@ CREATE TABLE `cpt_ecriture` (
 
 LOCK TABLES `cpt_ecriture` WRITE;
 /*!40000 ALTER TABLE `cpt_ecriture` DISABLE KEYS */;
-INSERT INTO `cpt_ecriture` VALUES (1,'ecriture 1'),(2,'ecriture 2'),(3,'ecriture 3');
+INSERT INTO `cpt_ecriture` VALUES (1,'ecriture 1'),(2,'ecriture 2'),(3,'ecriture 3'),(5,'ecriture 5');
 /*!40000 ALTER TABLE `cpt_ecriture` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -90,7 +90,7 @@ CREATE TABLE `cpt_mouvement` (
 
 LOCK TABLES `cpt_mouvement` WRITE;
 /*!40000 ALTER TABLE `cpt_mouvement` DISABLE KEYS */;
-INSERT INTO `cpt_mouvement` VALUES (200,1,1,1),(100,2,2,2),(100,2,3,3),(-200,1,1,1),(200,3,4,NULL);
+INSERT INTO `cpt_mouvement` VALUES (200,1,1,1),(100,2,2,2),(100,2,3,3),(-200,1,1,1),(200,3,4,NULL),(300,5,1,1);
 /*!40000 ALTER TABLE `cpt_mouvement` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -116,7 +116,7 @@ CREATE TABLE `cpt_plan_comptable` (
 
 LOCK TABLES `cpt_plan_comptable` WRITE;
 /*!40000 ALTER TABLE `cpt_plan_comptable` DISABLE KEYS */;
-INSERT INTO `cpt_plan_comptable` VALUES (1,404000,'Plan comptable fournsseur'),(2,404100,'Sous Plan comptable fournsseur - 100'),(3,404100,'Sous Plan comptable fournsseur - 200'),(4,500000,'Plan comptable 500000');
+INSERT INTO `cpt_plan_comptable` VALUES (1,404000,'Plan comptable fournsseur'),(2,404100,'Sous Plan comptable fournsseur - 100'),(3,404200,'Sous Plan comptable fournsseur - 200'),(4,500000,'Plan comptable 500000');
 /*!40000 ALTER TABLE `cpt_plan_comptable` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -129,4 +129,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-05-21 15:04:09
+-- Dump completed on 2022-05-22 11:37:46
